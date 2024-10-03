@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'black': ['"Noto Serif JP 900"'],
+        'sans': ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
       },
     },
   },

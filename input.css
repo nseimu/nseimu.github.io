@@ -4,8 +4,20 @@
 
 @layer base {
   html {
-    font-family: "Noto Serif JP", ui-serif, serif;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
   }
+}
+
+.font-bold {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 body, html {
