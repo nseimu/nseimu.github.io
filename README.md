@@ -17,7 +17,6 @@ npm run build
 ## Static HTTP server
 
 ```shell
-npm install -g http-server
 npx http-server ./
 ```
 
