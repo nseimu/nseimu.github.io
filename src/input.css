@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 .font-bold {
-  font-family: "Noto Serif Bold", serif;
+  font-family: 'Noto Serif Bold', serif;
 }
 
-body, html {
-    height: 100%;
-    display: grid;
+body,
+html {
+  height: 100%;
+  display: grid;
 }
 
 svg {
-    display: inline-block;
-    fill: currentColor;
-    user-select: none;
+  display: inline-block;
+  fill: currentColor;
+  user-select: none;
 }
