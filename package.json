@@ -4,8 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./index.css --minify",
-    "prepare": "husky"
+    "build": "tailwindcss -i ./src/input.css -o ./index.css --minify"
   },
   "repository": {
     "type": "git",
@@ -15,7 +14,6 @@
   "license": "ISC",
   "homepage": "https://www.nadineseidu.info/",
   "devDependencies": {
-    "husky": "9.1.6",
     "prettier": "3.3.3",
     "tailwindcss": "3.4.13"
   }
