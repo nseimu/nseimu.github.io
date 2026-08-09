@@ -12,6 +12,11 @@ html {
   display: grid;
 }
 
+::selection {
+  background-color: #e7e5e4;
+  color: #1c1917;
+}
+
 svg {
   display: inline-block;
   fill: currentColor;
