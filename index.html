@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Hallo, mein Name ist Nadine Seidu! Ich bin Kulturwissenschaftlerin und Führungskraft mit fast 15 Jahren Erfahrung in Kulturverwaltung, Archiv, Museum und Wissenschaft." />
+    <meta name="description" content="Nadine Seidu — Kulturwissenschaftlerin. Strategie, Führung und Projektentwicklung an den Schnittstellen von Kultur, Wissenschaft, Verwaltung und Gesellschaft." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://www.nadineseidu.info/img/1724333521397-og.jpg" />
     <meta name="og:site_name" content="Nadine Seidu" />
@@ -41,49 +41,335 @@
       }
     </script>
   </head>
-  <body class="bg-stone-50 antialiased">
+  <body class="bg-offwhite text-ink antialiased">
     <h1 class="sr-only">Nadine Seidu</h1>
-    <main class="m-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 mx-auto w-3xl md:max-w-6xl text-gray-700 md:mt-16 md:border">
-        <div class="p-10 md:pb-20 md:pl-20">
-          <h2 class="font-bold text-4xl md:text-5xl mb-4">Nadine Seidu</h2>
-          <p class="mb-4">Kulturwissenschaftlerin mit fast 15 Jahren Erfahrung in Kulturverwaltung, Archiv, Museum und Wissenschaft.</p>
-          <strong class="font-bold">Schwerpunkte</strong>
-          <p class="mb-4">Personalführung | Konzept- und Strategieentwicklung | Netzwerkaufbau | Fördermittelvergabe | Gremienarbeit | Projektleitung</p>
-          <strong class="font-bold">Biografische Stationen (Auswahl)</strong>
-          <p class="mb-4">2021 bis 2026: Leitung Koordinierungsstelle, Kulturamt der Landeshauptstadt Stuttgart | Leitungsstab, Landesarchiv Baden-Württemberg | Stabsstelle des Rektors, Universität Stuttgart | Ausgebildete Museumskuratorin, Historisches Museum der Pfalz | Studierte Kulturwissenschaftlerin, Johannes Gutenberg-Universität Mainz</p>
-          <ul class="flex -mx-2.5">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-offwhite/90 backdrop-blur-sm border-b border-ink/10">
+      <nav class="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between" aria-label="Hauptnavigation">
+        <a href="#" class="font-display text-sm tracking-widest uppercase text-ink hover:text-bordeaux transition-colors duration-200">Nadine Seidu</a>
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a class="nav-link" href="#position">Über mich</a></li>
+          <li><a class="nav-link" href="#erfahrung">Arbeit</a></li>
+          <li><a class="nav-link" href="#perspektive">Perspektive</a></li>
+        </ul>
+        <a href="#kontakt" class="cta-btn text-[10px]">Let's Talk →</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- 01 HERO -->
+      <section id="hero" class="min-h-screen pt-16 bg-offwhite flex flex-col md:flex-row">
+        <!-- Text column -->
+        <div class="flex-1 flex flex-col justify-end md:justify-center px-6 md:px-16 lg:px-24 py-16 md:py-24">
+          <p class="label mb-6 flex items-center gap-3">
+            <span class="accent-line"></span>
+            Strategie · Entwicklung · Verbindung
+          </p>
+          <h2 class="headline-hero mb-8">
+            Gesellschaft<br>gestalten.<br>
+            <span class="text-warmgrey">Strukturen</span><br>entwickeln.<br>
+            Zukunft<br>neu denken.
+          </h2>
+          <p class="text-warmgrey text-sm tracking-wider uppercase mb-2">Nadine Seidu</p>
+          <p class="text-sm text-ink/70 mb-10">Kulturwissenschaftlerin · Führung · Strategie · Projektentwicklung</p>
+          <p class="max-w-reading text-base leading-relaxed text-ink/80 mb-12">
+            Rund 15 Jahre Erfahrung an den Schnittstellen von Kultur, Wissenschaft, Verwaltung und Gesellschaft.
+          </p>
+          <a href="#kontakt" class="cta-btn self-start">Let's Talk →</a>
+        </div>
+        <!-- Portrait -->
+        <div class="flex-1 flex items-end justify-center md:justify-end overflow-hidden">
+          <picture>
+            <source type="image/avif" srcset="/img/1724333521397-500w.avif 500w, /img/1724333521397-900w.avif 900w, /img/1724333521397-1300w.avif 1300w" sizes="(max-width: 767px) 100vw, 50vw" />
+            <source type="image/webp" srcset="/img/1724333521397-500w.webp 500w, /img/1724333521397-900w.webp 900w, /img/1724333521397-1300w.webp 1300w" sizes="(max-width: 767px) 100vw, 50vw" />
+            <img srcset="/img/1724333521397-500w.jpg 500w, /img/1724333521397-900w.jpg 900w" sizes="(max-width: 767px) 100vw, 50vw" src="/img/1724333521397-1300w.jpg" width="1300" height="1950" alt="Nadine Seidu" class="w-full md:max-w-xl object-cover object-top" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- 02 POSITION -->
+      <section id="position" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <p class="label mb-10 flex items-center gap-3">
+          <span class="accent-line"></span>
+          01 / Position
+        </p>
+        <div class="md:grid md:grid-cols-3 gap-16">
+          <div class="md:col-span-2">
+            <h2 class="headline-section mb-10">
+              Ich verbinde<br>Menschen, Ideen<br>und Institutionen.
+            </h2>
+            <div class="space-y-5 text-base leading-relaxed text-ink/80 max-w-reading">
+              <p>Gesellschaftliche Veränderung braucht gute Ideen, tragfähige Strukturen und Menschen, die Verantwortung übernehmen.</p>
+              <p>Ich arbeite an den Schnittstellen von Kultur, Wissenschaft, Verwaltung und Gesellschaft. Ich entwickle Strategien, begleite komplexe Prozesse, führe Teams und bringe unterschiedliche Perspektiven zusammen.</p>
+              <p>Mich interessiert, wie aus Ideen konkrete Projekte entstehen, wie Organisationen sich weiterentwickeln können und wie Zusammenarbeit neue Möglichkeiten schafft.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 KOMPETENZEN -->
+      <section id="kompetenzen" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
+        <div class="max-w-7xl mx-auto">
+          <p class="label mb-10 flex items-center gap-3">
+            <span class="accent-line"></span>
+            02 / Was ich einbringe
+          </p>
+          <h2 class="headline-section mb-16">Was ich<br>einbringe.</h2>
+          <div class="grid md:grid-cols-2 gap-0 border-t border-ink/20">
+            <!-- 01 Führung -->
+            <div class="py-10 pr-0 md:pr-16 border-b border-ink/20 md:border-r">
+              <p class="font-display text-lg mb-1">01 / Führung</p>
+              <p class="text-bordeaux text-sm mb-4">Menschen führen. Verantwortung übernehmen.</p>
+              <p class="text-ink/70 leading-relaxed">Interdisziplinäre Teams führen, Arbeitsstrukturen entwickeln und Verantwortung für Ressourcen, Prozesse und Entscheidungen übernehmen.</p>
+            </div>
+            <!-- 02 Strategie -->
+            <div class="py-10 md:pl-16 border-b border-ink/20">
+              <p class="font-display text-lg mb-1">02 / Strategie</p>
+              <p class="text-bordeaux text-sm mb-4">Strukturen entwickeln. Veränderung gestalten.</p>
+              <p class="text-ink/70 leading-relaxed">Strategien und Konzepte entwickeln – mit Blick auf nachhaltige Strukturen und langfristige Wirkung.</p>
+            </div>
+            <!-- 03 Projekte -->
+            <div class="py-10 pr-0 md:pr-16 border-b border-ink/20 md:border-b-0 md:border-r">
+              <p class="font-display text-lg mb-1">03 / Projekte</p>
+              <p class="text-bordeaux text-sm mb-4">Ideen in Bewegung bringen.</p>
+              <p class="text-ink/70 leading-relaxed">Projekte von der ersten Idee über Konzeption und Koordination bis zur Umsetzung begleiten.</p>
+            </div>
+            <!-- 04 Netzwerke -->
+            <div class="py-10 md:pl-16">
+              <p class="font-display text-lg mb-1">04 / Netzwerke</p>
+              <p class="text-bordeaux text-sm mb-4">Menschen und Perspektiven verbinden.</p>
+              <p class="text-ink/70 leading-relaxed mb-4">Institutionen, Disziplinen und Menschen zusammenbringen und daraus tragfähige Kooperationen entwickeln.</p>
+              <p class="text-xs tracking-wide text-warmgrey">Fördermittel · Gremienarbeit · interdisziplinäre Prozesse · Projektsteuerung</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 HALTUNG / PERSPEKTIVE (dark section) -->
+      <section id="perspektive" class="py-36 md:py-48 px-6 md:px-16 lg:px-24 bg-ink text-offwhite">
+        <div class="max-w-7xl mx-auto">
+          <p class="label mb-10 flex items-center gap-3 text-warmgrey">
+            <span class="block w-8 h-px bg-bordeaux"></span>
+            03 / Perspektive
+          </p>
+          <h2 class="headline-section-inv mb-12">
+            Gesellschaft<br>ist Veränderung.
+          </h2>
+          <p class="text-offwhite/70 leading-relaxed max-w-reading text-base">
+            Gesellschaft verändert sich ständig. Organisationen, Institutionen und Menschen müssen darauf reagieren – und können Veränderung zugleich aktiv mitgestalten.
+          </p>
+          <p class="text-offwhite/70 leading-relaxed max-w-reading text-base mt-5">
+            Ich glaube an langfristiges Denken, interdisziplinäre Zusammenarbeit und daran, dass Veränderung dort beginnt, wo Menschen Verantwortung übernehmen und gemeinsam neue Wege entwickeln.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 FELDER -->
+      <section id="felder" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-offwhite">
+        <div class="max-w-7xl mx-auto">
+          <p class="label mb-10 flex items-center gap-3">
+            <span class="accent-line"></span>
+            04 / Zusammenarbeit
+          </p>
+          <h2 class="headline-section mb-16">
+            Verschiedene<br>Perspektiven.<br>
+            <span class="text-warmgrey">Ein gemeinsames<br>Ziel.</span>
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-ink/20 pt-12">
+            <div>
+              <p class="font-display text-xl mb-3">Kultur</p>
+              <p class="text-xs text-warmgrey tracking-wide">Institutionen · Projekte · Erinnerung · Entwicklung</p>
+            </div>
+            <div>
+              <p class="font-display text-xl mb-3">Wissenschaft</p>
+              <p class="text-xs text-warmgrey tracking-wide">Hochschulen · Transfer · Kooperation · Forschung</p>
+            </div>
+            <div>
+              <p class="font-display text-xl mb-3">Zivilgesellschaft</p>
+              <p class="text-xs text-warmgrey tracking-wide">NGOs · Initiativen · gesellschaftlicher Wandel</p>
+            </div>
+            <div>
+              <p class="font-display text-xl mb-3">Stiftungen</p>
+              <p class="text-xs text-warmgrey tracking-wide">Strategie · Programme · Kooperationen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 GEMEINSAM -->
+      <section id="gemeinsam" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
+        <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 gap-24 items-start">
+          <div>
+            <p class="label mb-10 flex items-center gap-3">
+              <span class="accent-line"></span>
+              Gemeinsam weiterdenken
+            </p>
+            <h2 class="headline-section">Gemeinsam<br>weiterdenken.</h2>
+          </div>
+          <div class="mt-12 md:mt-0 space-y-8 border-t border-ink/20 pt-8 md:border-t-0 md:pt-0">
+            <div class="border-b border-ink/10 pb-8">
+              <p class="font-display text-base mb-2">Eine Organisation weiterentwickeln?</p>
+              <p class="text-ink/70 text-sm leading-relaxed">Ich unterstütze bei Strategie, Konzeption und Veränderungsprozessen.</p>
+            </div>
+            <div class="border-b border-ink/10 pb-8">
+              <p class="font-display text-base mb-2">Ein neues Projekt entwickeln?</p>
+              <p class="text-ink/70 text-sm leading-relaxed">Ich begleite den Weg von der Idee bis zur Umsetzung.</p>
+            </div>
+            <div class="border-b border-ink/10 pb-8">
+              <p class="font-display text-base mb-2">Neue Kooperationen schaffen?</p>
+              <p class="text-ink/70 text-sm leading-relaxed">Ich verbinde Menschen, Institutionen und Disziplinen.</p>
+            </div>
+            <div>
+              <p class="font-display text-base mb-2">Ein gesellschaftlich relevantes Thema voranbringen?</p>
+              <p class="text-ink/70 text-sm leading-relaxed">Ich bringe kulturwissenschaftliche Perspektiven, strategische Erfahrung und Netzwerke ein.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 ERFAHRUNG -->
+      <section id="erfahrung" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-offwhite">
+        <div class="max-w-7xl mx-auto">
+          <p class="label mb-10 flex items-center gap-3">
+            <span class="accent-line"></span>
+            05 / Erfahrung
+          </p>
+          <h2 class="headline-section mb-16">
+            Erfahrung,<br>die Perspektiven<br>verbindet.
+          </h2>
+          <div class="space-y-0 border-t border-ink/20">
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+              <p class="font-display text-sm tracking-widest uppercase text-bordeaux mb-2 md:mb-0">Verwaltung</p>
+              <p class="md:col-span-2 text-ink/80">Leitung einer Koordinierungsstelle · Kulturamt der Landeshauptstadt Stuttgart</p>
+            </div>
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+              <p class="font-display text-sm tracking-widest uppercase text-bordeaux mb-2 md:mb-0">Archiv</p>
+              <p class="md:col-span-2 text-ink/80">Leitungsstab · Landesarchiv Baden-Württemberg</p>
+            </div>
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+              <p class="font-display text-sm tracking-widest uppercase text-bordeaux mb-2 md:mb-0">Wissenschaft</p>
+              <p class="md:col-span-2 text-ink/80">Stabsstelle des Rektors · Universität Stuttgart</p>
+            </div>
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+              <p class="font-display text-sm tracking-widest uppercase text-bordeaux mb-2 md:mb-0">Museum</p>
+              <p class="md:col-span-2 text-ink/80">Ausgebildete Museumskuratorin · Historisches Museum der Pfalz</p>
+            </div>
+            <div class="py-8 md:grid md:grid-cols-3 gap-8">
+              <p class="font-display text-sm tracking-widest uppercase text-bordeaux mb-2 md:mb-0">Studium</p>
+              <p class="md:col-span-2 text-ink/80">Kulturwissenschaft · Johannes Gutenberg-Universität Mainz</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 ÜBER MICH -->
+      <section id="ueber" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
+        <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 gap-16 items-start">
+          <!-- Placeholder Bild -->
+          <div class="img-placeholder w-full aspect-[3/4] mb-12 md:mb-0">
+            <span>Foto folgt</span>
+          </div>
+          <!-- Text -->
+          <div>
+            <p class="label mb-8 flex items-center gap-3">
+              <span class="accent-line"></span>
+              06 / Über Nadine
+            </p>
+            <h2 class="font-display text-3xl md:text-4xl mb-8">Über Nadine</h2>
+            <div class="space-y-5 text-ink/80 leading-relaxed">
+              <p>Ich bin Kulturwissenschaftlerin und arbeite seit rund 15 Jahren an den Schnittstellen von Kultur, Wissenschaft und Verwaltung.</p>
+              <p>Meine beruflichen Stationen haben mich vom Museum über das Archiv und die Wissenschaft bis in die Kulturverwaltung geführt. Diese unterschiedlichen Perspektiven prägen bis heute meine Arbeit.</p>
+              <p>Mich interessiert, wie Organisationen auf gesellschaftlichen Wandel reagieren können – und wie daraus neue Strukturen, Kooperationen und Perspektiven entstehen.</p>
+              <p>Ich verbinde analytisches Denken mit praktischer Umsetzung, strategische Entwicklung mit Verantwortung und unterschiedliche Menschen mit gemeinsamen Ideen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 PROJEKTE -->
+      <section id="projekte" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-offwhite">
+        <div class="max-w-7xl mx-auto">
+          <p class="label mb-10 flex items-center gap-3">
+            <span class="accent-line"></span>
+            07 / Ausgewählte Projekte
+          </p>
+          <h2 class="headline-section mb-16">Ausgewählte<br>Projekte.</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Projekt 01 -->
+            <div class="group">
+              <div class="img-placeholder w-full aspect-[4/3] mb-5 group-hover:bg-warmgrey/50 transition-colors duration-300">
+                <span>Projektbild folgt</span>
+              </div>
+              <p class="label mb-2">Strategie · Gesellschaft · Entwicklung</p>
+              <p class="font-display text-xl">Projekt 01</p>
+            </div>
+            <!-- Projekt 02 -->
+            <div class="group">
+              <div class="img-placeholder w-full aspect-[4/3] mb-5 group-hover:bg-warmgrey/50 transition-colors duration-300">
+                <span>Projektbild folgt</span>
+              </div>
+              <p class="label mb-2">Kultur · Kooperation · Erinnerung</p>
+              <p class="font-display text-xl">Projekt 02</p>
+            </div>
+            <!-- Projekt 03 -->
+            <div class="group">
+              <div class="img-placeholder w-full aspect-[4/3] mb-5 group-hover:bg-warmgrey/50 transition-colors duration-300">
+                <span>Projektbild folgt</span>
+              </div>
+              <p class="label mb-2">Wissenschaft · Transfer · Netzwerk</p>
+              <p class="font-display text-xl">Projekt 03</p>
+            </div>
+          </div>
+          <p class="mt-8 text-xs text-warmgrey">Konkrete Projekte werden in Kürze ergänzt.</p>
+        </div>
+      </section>
+
+      <!-- 10 KONTAKT -->
+      <section id="kontakt" class="min-h-screen bg-ink text-offwhite flex flex-col justify-between px-6 md:px-16 lg:px-24 py-24 md:py-36">
+        <div class="max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center">
+          <h2 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-12">
+            Eine Idee?<br>
+            Ein Projekt?<br>
+            Eine Frage?<br>
+            <span class="text-warmgrey">Lassen Sie uns<br>darüber sprechen.</span>
+          </h2>
+          <p class="text-offwhite/60 max-w-reading leading-relaxed mb-12">
+            Sie möchten eine Organisation weiterentwickeln, ein Projekt auf den Weg bringen oder ein gesellschaftlich relevantes Thema gemeinsam weiterdenken?<br>
+            Ich freue mich auf den Austausch.
+          </p>
+          <ul class="flex flex-col sm:flex-row gap-4">
             <li>
-              <a class="inline-flex items-center justify-center w-14 h-14 p-2.5 text-gray-500 hover:text-gray-900 hover:scale-110 transition-all duration-200" aria-label="E-Mail schreiben" href="mailto:kontakt@nadineseidu.info">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-full" aria-hidden="true">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5 8-5zm-8-7L4 6h16z" />
-                </svg>
+              <a href="mailto:kontakt@nadineseidu.info" class="cta-btn-inv" aria-label="E-Mail schreiben">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 shrink-0" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5 8-5zm-8-7L4 6h16z" /></svg>
+                E-Mail →
               </a>
             </li>
             <li>
-              <a class="inline-flex items-center justify-center w-14 h-14 p-3 text-gray-500 hover:text-gray-900 hover:scale-110 transition-all duration-200" aria-label="Social Link zu LinkedIn" href="https://www.linkedin.com/in/nadine-seidu/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" class="w-full" aria-hidden="true">
-                  <path d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5ZM10 13H5v16h5Zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81ZM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5Z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="inline-flex items-center justify-center w-14 h-14 p-3 text-gray-500 hover:text-gray-900 hover:scale-110 transition-all duration-200" aria-label="Social Link zu Bluesky" href="https://bsky.app/profile/nadineseidu.bsky.social" target="_blank">
-                <svg viewBox="0 0 64 57" style="width:32px;height:28.5px">
-                  <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805Zm36.254 0C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"/>
-                </svg>
+              <a href="https://www.linkedin.com/in/nadine-seidu/" target="_blank" class="cta-btn-inv" aria-label="LinkedIn Profil">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" class="w-4 h-4 shrink-0" aria-hidden="true"><path d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5ZM10 13H5v16h5Zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81ZM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5Z" /></svg>
+                LinkedIn →
               </a>
             </li>
           </ul>
         </div>
-        <div class="md:-mt-16 md:mr-16 flex justify-center md:justify-end">
-          <picture>
-            <source type="image/avif" srcset="/img/1724333521397-500w.avif 500w, /img/1724333521397-900w.avif 900w, /img/1724333521397-1300w.avif 1300w" sizes="(max-width: 767px) 100vw, 511px" />
-            <source type="image/webp" srcset="/img/1724333521397-500w.webp 500w, /img/1724333521397-900w.webp 900w, /img/1724333521397-1300w.webp 1300w" sizes="(max-width: 767px) 100vw, 511px" />
-            <img srcset="/img/1724333521397-500w.jpg 500w, /img/1724333521397-900w.jpg 900w" sizes="(max-width: 767px) 100vw, 511px" src="/img/1724333521397-1300w.jpg" width="1300" height="1950" alt="Nadine Seidu im Business-Outfit" />
-          </picture>
-        </div>
-      </div>
+        <!-- Footer -->
+        <footer class="max-w-7xl mx-auto w-full mt-16 pt-8 border-t border-offwhite/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <p class="text-xs text-warmgrey tracking-widest uppercase">Nadine Seidu · Stuttgart · Deutschlandweit</p>
+          <nav aria-label="Footer Navigation">
+            <ul class="flex gap-6">
+              <li>
+                <a class="text-xs text-warmgrey hover:text-offwhite transition-colors tracking-widest uppercase" href="https://www.linkedin.com/in/nadine-seidu/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+              </li>
+              <li>
+                <a class="text-xs text-warmgrey hover:text-offwhite transition-colors tracking-widest uppercase" href="https://bsky.app/profile/nadineseidu.bsky.social" target="_blank" aria-label="Bluesky">Bluesky</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+
     </main>
   </body>
 </html>

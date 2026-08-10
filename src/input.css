@@ -2,23 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Intentional: .font-bold maps to Noto Serif Bold — do not remove */
 .font-bold {
+  font-family: 'Noto Serif Bold', serif;
+}
+
+.font-display {
   font-family: 'Noto Serif Bold', serif;
 }
 
 body,
 html {
   height: 100%;
-  display: grid;
 }
 
 ::selection {
-  background-color: #e7e5e4;
-  color: #1c1917;
+  background-color: #7c2d3e;
+  color: #f5f4f0;
 }
 
 svg {
   display: inline-block;
   fill: currentColor;
   user-select: none;
+}
+
+/* Section label: small uppercase tracking */
+.label {
+  @apply text-xs tracking-widest2 uppercase text-warmgrey;
+}
+
+/* Hero display headline */
+.headline-hero {
+  @apply font-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight text-ink;
+}
+
+/* Large section headline */
+.headline-section {
+  @apply font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-ink;
+}
+
+/* Inverted headline for dark sections */
+.headline-section-inv {
+  @apply font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-offwhite;
+}
+
+/* Nav link */
+.nav-link {
+  @apply text-xs tracking-widest uppercase text-ink hover:text-bordeaux transition-colors duration-200;
+}
+
+/* CTA button */
+.cta-btn {
+  @apply inline-flex items-center gap-2 text-xs tracking-widest uppercase border border-ink px-6 py-3 hover:bg-ink hover:text-offwhite transition-colors duration-200;
+}
+
+.cta-btn-inv {
+  @apply inline-flex items-center gap-2 text-xs tracking-widest uppercase border border-offwhite text-offwhite px-6 py-3 hover:bg-offwhite hover:text-ink transition-colors duration-200;
+}
+
+/* Bordeaux accent line */
+.accent-line {
+  @apply block w-8 h-px bg-bordeaux;
+}
+
+/* Placeholder image box */
+.img-placeholder {
+  @apply bg-warmgrey/30 flex items-center justify-center text-warmgrey text-xs tracking-widest uppercase;
 }
