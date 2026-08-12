@@ -77,3 +77,4 @@ svg {
 .img-placeholder {
   @apply bg-warmgrey/30 flex items-center justify-center text-warmgrey text-xs tracking-widest uppercase;
 }
+
