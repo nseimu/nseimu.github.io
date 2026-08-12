@@ -16,6 +16,13 @@ html {
   height: 100%;
 }
 
+body {
+  background:
+    radial-gradient(circle at 10% 15%, rgba(124, 45, 62, 0.08), transparent 20%),
+    radial-gradient(circle at 90% 10%, rgba(184, 181, 174, 0.28), transparent 25%),
+    linear-gradient(180deg, #f5f4f0 0%, #f8f5f1 100%);
+}
+
 ::selection {
   background-color: #7c2d3e;
   color: #f5f4f0;
@@ -49,7 +56,7 @@ svg {
 
 /* Nav link */
 .nav-link {
-  @apply text-xs tracking-widest uppercase text-ink hover:text-bordeaux transition-colors duration-200;
+  @apply text-xs tracking-widest uppercase text-ink hover:text-warmgrey transition-colors duration-200;
 }
 
 /* CTA button */
@@ -61,12 +68,13 @@ svg {
   @apply inline-flex items-center gap-2 text-xs tracking-widest uppercase border border-offwhite text-offwhite px-6 py-3 hover:bg-offwhite hover:text-ink transition-colors duration-200;
 }
 
-/* Bordeaux accent line */
+/* Warm accent line */
 .accent-line {
-  @apply block w-8 h-px bg-bordeaux;
+  @apply block w-8 h-px bg-warmgrey;
 }
 
 /* Placeholder image box */
 .img-placeholder {
   @apply bg-warmgrey/30 flex items-center justify-center text-warmgrey text-xs tracking-widest uppercase;
 }
+
