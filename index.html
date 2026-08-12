@@ -60,8 +60,14 @@
     <main>
 
       <!-- 01 HERO -->
-      <section id="hero" class="min-h-screen pt-16 bg-offwhite flex flex-col md:flex-row">
-        <!-- Text column -->
+      <section id="hero" class="relative min-h-screen pt-16 bg-offwhite flex flex-col md:flex-row overflow-hidden">
+       <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+         <div class="absolute -left-14 top-20 h-48 w-48 border border-ink/10 rotate-12"></div>
+         <div class="absolute right-8 top-1/4 h-40 w-40 bg-bordeaux/10 rotate-12"></div>
+         <div class="absolute bottom-20 left-1/3 h-32 w-32 border border-warmgrey/40 -rotate-12"></div>
+         <div class="absolute right-1/4 bottom-8 h-24 w-24 bg-ink/5 rotate-45"></div>
+       </div>
+       <!-- Text column -->
         <div class="flex-1 flex flex-col justify-end md:justify-center px-6 md:px-16 lg:px-24 py-16 md:py-24">
           <p class="label mb-6 flex items-center gap-3">
             <span class="accent-line"></span>
@@ -79,11 +85,13 @@
           <a href="#kontakt" class="cta-btn self-start">Lass uns sprechen →</a>
         </div>
         <!-- Portrait -->
-        <div class="flex-1 flex items-end justify-center md:justify-end overflow-hidden">
+        <div class="relative flex-1 flex items-end justify-center md:justify-end overflow-hidden">
+          <div class="absolute right-8 top-12 h-40 w-40 border border-ink/10 rotate-12" aria-hidden="true"></div>
+          <div class="absolute right-16 bottom-12 h-28 w-28 bg-bordeaux/10 -rotate-12" aria-hidden="true"></div>
           <picture>
             <source type="image/avif" srcset="/img/1724333521397-500w.avif 500w, /img/1724333521397-900w.avif 900w, /img/1724333521397-1300w.avif 1300w" sizes="(max-width: 767px) 100vw, 50vw" />
             <source type="image/webp" srcset="/img/1724333521397-500w.webp 500w, /img/1724333521397-900w.webp 900w, /img/1724333521397-1300w.webp 1300w" sizes="(max-width: 767px) 100vw, 50vw" />
-            <img srcset="/img/1724333521397-500w.jpg 500w, /img/1724333521397-900w.jpg 900w" sizes="(max-width: 767px) 100vw, 50vw" src="/img/1724333521397-1300w.jpg" width="1300" height="1950" alt="Nadine Seidu" class="w-full md:max-w-xl object-cover object-top" />
+            <img srcset="/img/1724333521397-500w.jpg 500w, /img/1724333521397-900w.jpg 900w" sizes="(max-width: 767px) 100vw, 50vw" src="/img/1724333521397-1300w.jpg" width="1300" height="1950" alt="Nadine Seidu" class="relative w-full md:max-w-xl object-cover object-top shadow-[16px_16px_0_0_rgba(124,45,62,0.08)]" />
           </picture>
         </div>
       </section>
@@ -118,19 +126,19 @@
           <h2 class="headline-section mb-16">Das kann ich<br>und das liebe ich.</h2>
           <div class="grid md:grid-cols-3 gap-0 border-t border-ink/20">
             <!-- 01 Konzepte & Strategie -->
-            <div class="py-10 pr-0 md:pr-16 border-b border-ink/20 md:border-r">
+            <div class="py-10 pr-0 md:pr-16 border-b border-ink/20 md:border-r md:-rotate-1 md:bg-white/30 md:shadow-[6px_6px_0_0_rgba(17,17,17,0.04)]">
               <p class="font-display text-lg mb-1">Konzepte & Strategie</p>
               <p class="text-warmgrey text-sm mb-4">Klarheit aus Komplexität.</p>
               <p class="text-ink/70 leading-relaxed">Ich entwickle Strategien und Konzepte, die nicht in der Schublade landen, sondern gelebt werden. Mit Blick auf Menschen, Realität und echte Wirkung.</p>
             </div>
             <!-- 02 Prozessbegleitung -->
-            <div class="py-10 pr-0 md:pr-16 md:border-r border-b border-ink/20 md:border-b-0">
+            <div class="py-10 pr-0 md:pr-16 md:border-r border-b border-ink/20 md:border-b-0 md:translate-y-2 md:rotate-1 md:bg-ink/[0.02]">
               <p class="font-display text-lg mb-1">Prozessbegleitung</p>
               <p class="text-warmgrey text-sm mb-4">Im Fragen-Dschungel navigieren.</p>
               <p class="text-ink/70 leading-relaxed">Veränderungsprozesse sind anstrengend. Ich begleite sie: mit offenen Ohren, klugen Fragen und dem nötigen Raum für Fehler und Lernen.</p>
             </div>
             <!-- 03 Vernetzung & Kooperation -->
-            <div class="py-10 md:pl-16 border-b border-ink/20 md:border-b-0">
+            <div class="py-10 md:pl-16 border-b border-ink/20 md:border-b-0 md:-translate-y-1 md:-rotate-1 md:bg-white/40 md:shadow-[6px_6px_0_0_rgba(184,181,174,0.18)]">
               <p class="font-display text-lg mb-1">Vernetzung & Kooperation</p>
               <p class="text-warmgrey text-sm mb-4">Menschen und Ideen zusammenbringen.</p>
               <p class="text-ink/70 leading-relaxed">Ich verbinde Menschen, Institutionen und Disziplinen — und entwickle daraus echte Kooperationen, die mehr schaffen, als jeder allein könnte.</p>
@@ -240,19 +248,19 @@
             Erfahrung,<br>die nicht nur<br>weiß, sondern<br>mitdenkt.
           </h2>
           <div class="space-y-0 border-t border-ink/20">
-            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8 md:translate-x-4 md:bg-ink/[0.015]">
               <p class="font-display text-sm tracking-widest uppercase text-warmgrey mb-2 md:mb-0">Verwaltung</p>
               <p class="md:col-span-2 text-ink/80">Leitung einer Koordinierungsstelle · Kulturamt der Landeshauptstadt Stuttgart</p>
             </div>
-            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8 md:-translate-x-3">
               <p class="font-display text-sm tracking-widest uppercase text-warmgrey mb-2 md:mb-0">Wissenschaft</p>
               <p class="md:col-span-2 text-ink/80">Stabsstelle des Rektors · Universität Stuttgart</p>
             </div>
-            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8">
+            <div class="py-8 border-b border-ink/10 md:grid md:grid-cols-3 gap-8 md:translate-x-5 md:bg-white/40">
               <p class="font-display text-sm tracking-widest uppercase text-warmgrey mb-2 md:mb-0">Archiv</p>
               <p class="md:col-span-2 text-ink/80">Leitungsstab · Landesarchiv Baden-Württemberg</p>
             </div>
-            <div class="py-8 md:grid md:grid-cols-3 gap-8">
+            <div class="py-8 md:grid md:grid-cols-3 gap-8 md:-translate-x-4 md:bg-ink/[0.015]">
               <p class="font-display text-sm tracking-widest uppercase text-warmgrey mb-2 md:mb-0">Museum</p>
               <p class="md:col-span-2 text-ink/80">Ausgebildete Museumskuratorin · Historisches Museum der Pfalz</p>
             </div>
@@ -324,8 +332,13 @@
       </section>
 
       <!-- 10 KONTAKT -->
-      <section id="kontakt" class="min-h-screen bg-ink text-offwhite flex flex-col justify-between px-6 md:px-16 lg:px-24 py-24 md:py-36">
-        <div class="max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center">
+      <section id="kontakt" class="relative min-h-screen bg-ink text-offwhite flex flex-col justify-between px-6 md:px-16 lg:px-24 py-24 md:py-36 overflow-hidden">
+        <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+          <div class="absolute -left-12 top-20 h-52 w-52 border border-offwhite/10 rotate-12"></div>
+          <div class="absolute right-10 top-16 h-44 w-44 bg-warmgrey/10 -rotate-12"></div>
+          <div class="absolute right-1/4 bottom-20 h-28 w-28 border border-offwhite/20 rotate-45"></div>
+        </div>
+        <div class="max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center relative z-10">
           <h2 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-12">
             Lass uns<br>
             einfach<br>
