@@ -16,6 +16,12 @@ html {
   height: 100%;
 }
 
+body {
+  background:
+    radial-gradient(circle at top left, rgba(184, 181, 174, 0.22), transparent 30%),
+    linear-gradient(180deg, #f5f4f0 0%, #f9f7f4 100%);
+}
+
 ::selection {
   background-color: #7c2d3e;
   color: #f5f4f0;
@@ -49,7 +55,7 @@ svg {
 
 /* Nav link */
 .nav-link {
-  @apply text-xs tracking-widest uppercase text-ink hover:text-bordeaux transition-colors duration-200;
+  @apply text-xs tracking-widest uppercase text-ink hover:text-warmgrey transition-colors duration-200;
 }
 
 /* CTA button */
@@ -61,9 +67,9 @@ svg {
   @apply inline-flex items-center gap-2 text-xs tracking-widest uppercase border border-offwhite text-offwhite px-6 py-3 hover:bg-offwhite hover:text-ink transition-colors duration-200;
 }
 
-/* Bordeaux accent line */
+/* Warm accent line */
 .accent-line {
-  @apply block w-8 h-px bg-bordeaux;
+  @apply block w-8 h-px bg-warmgrey;
 }
 
 /* Placeholder image box */
