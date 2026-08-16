@@ -1,39 +1,39 @@
 # AGENTS.md
 
-Kurzanleitung fuer AI-Coding-Agents in diesem Repository.
+Quick guide for AI coding agents in this repository.
 
-## Projektprofil
-- Statische Single-Page-Site (GitHub Pages) ohne JS-Build-Pipeline.
-- Tailwind CSS wird aus einer Quelldatei gebaut.
-- Bestehende Projekt-Doku: [README.md](README.md)
+## Project Profile
+- Static single-page site (GitHub Pages) without a JavaScript build pipeline.
+- Tailwind CSS is built from a single source file.
+- Existing project documentation: [README.md](README.md)
 
-## Schnellstart
-1. Abhaengigkeiten installieren: npm install
-2. CSS bauen: npm run build
-3. Lokal pruefen: npx http-server ./
+## Quick Start
+1. Install dependencies: `npm install`
+2. Build CSS: `npm run build`
+3. Check locally: `npx http-server ./`
 
 ## Source of Truth
-- Inhalt und Struktur: [index.html](index.html)
-- Tailwind-Quelle: [src/input.css](src/input.css)
-- Tailwind-Konfiguration: [tailwind.config.js](tailwind.config.js)
-- Generiertes CSS-Artifact: [index.css](index.css)
-- Formatierung: [.prettierrc.json](.prettierrc.json)
+- Content and structure: [index.html](index.html)
+- Tailwind source: [src/input.css](src/input.css)
+- Tailwind configuration: [tailwind.config.js](tailwind.config.js)
+- Generated CSS artifact: [index.css](index.css)
+- Formatting: [.prettierrc.json](.prettierrc.json)
 
-## Arbeitsregeln fuer Agents
-- Nicht direkt in index.css editieren. Diese Datei ist Build-Output und wird mit npm run build erzeugt.
-- Bei Styling-Aenderungen in src/input.css oder index.html anschliessend immer npm run build ausfuehren.
-- Neue HTML- oder Template-Dateien nur anlegen, wenn wirklich noetig; falls doch, tailwind.config.js content-Liste erweitern, damit Utilities erkannt werden.
-- Bestehende deutsche Inhalte, SEO-Metadaten und JSON-LD in index.html erhalten, ausser die Aufgabe verlangt explizit inhaltliche Aenderungen.
-- Die Klasse .font-bold in src/input.css ist bewusst auf Noto Serif Bold gemappt; nicht ohne klaren Grund entfernen.
+## Working Rules for Agents
+- Do not edit [index.css](index.css) directly. It is generated output produced by `npm run build`.
+- After any styling change in [src/input.css](src/input.css) or [index.html](index.html), always run `npm run build`.
+- Only add new HTML or template files when truly necessary. If you do, extend the `content` list in [tailwind.config.js](tailwind.config.js) so Tailwind detects the utilities.
+- Preserve existing German content, SEO metadata, and JSON-LD in [index.html](index.html) unless the task explicitly requires content changes.
+- The `.font-bold` class in [src/input.css](src/input.css) is intentionally mapped to Noto Serif Bold; do not remove it without a clear reason.
 
-## Validierung vor Abschluss
-1. npm run build laeuft ohne Fehler.
-2. Seite laedt lokal ueber npx http-server ./
-3. Keine unbeabsichtigten Aenderungen an Bildpfaden, Font-Dateien oder Meta-Tags.
+## Validation Before Completion
+1. `npm run build` completes without errors.
+2. The site loads locally via `npx http-server ./`
+3. No unintended changes to image paths, font files, or meta tags.
 
-## Wenn unklar
-- Zuerst [README.md](README.md) konsultieren.
-- Bei wiederkehrenden Aufgaben geeignete Erweiterung vorschlagen:
-  - .github/instructions/frontend.instructions.md fuer dateispezifische Frontend-Regeln
-  - .github/prompts/release-check.prompt.md fuer wiederholbare Release-Checks
-  - .github/skills/site-maintenance/SKILL.md fuer mehrstufige Wartungsablaeufe
+## When in Doubt
+- Consult [README.md](README.md) first.
+- For recurring tasks, suggest an appropriate extension:
+  - `.github/instructions/frontend.instructions.md` for file-specific frontend rules
+  - `.github/prompts/release-check.prompt.md` for repeatable release checks
+  - `.github/skills/site-maintenance/SKILL.md` for multi-step maintenance workflows

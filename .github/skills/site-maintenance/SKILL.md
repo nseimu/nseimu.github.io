@@ -6,53 +6,53 @@ description: "Use when maintaining this static site: content updates in index.ht
 # Site Maintenance
 
 ## Purpose
-Standardisierter Workflow fuer wiederkehrende Wartung an dieser statischen Website.
+Standardized workflow for recurring maintenance on this static website.
 
 ## Primary References
-- Projektueberblick und Kommandos: [README.md](README.md)
-- Agent-Grundregeln: [AGENTS.md](AGENTS.md)
-- Frontend-Dateiregeln: [.github/instructions/frontend.instructions.md](.github/instructions/frontend.instructions.md)
+- Project overview and commands: [README.md](README.md)
+- Core agent rules: [AGENTS.md](AGENTS.md)
+- Frontend file rules: [.github/instructions/frontend.instructions.md](.github/instructions/frontend.instructions.md)
 
 ## Use This Skill For
-- Inhaltsaenderungen in [index.html](index.html)
-- Style-Anpassungen in [src/input.css](src/input.css)
-- Tailwind-Konfigurationsaenderungen in [tailwind.config.js](tailwind.config.js)
-- Vorbereitung von sicheren, kleinen Release-Aenderungen
+- Content changes in [index.html](index.html)
+- Style adjustments in [src/input.css](src/input.css)
+- Tailwind configuration changes in [tailwind.config.js](tailwind.config.js)
+- Preparing safe, small release changes
 
 ## Guardrails
-- Nie direkt [index.css](index.css) bearbeiten (Build-Output).
-- Deutsche Inhalte und SEO-Metadaten nur aendern, wenn angefordert.
-- Bestehende Bildpfade, srcset-Varianten, Fonts und JSON-LD nicht unbeabsichtigt veraendern.
+- Never edit [index.css](index.css) directly; it is generated build output.
+- Only change German content and SEO metadata when requested.
+- Do not unintentionally alter existing image paths, `srcset` variants, fonts, or JSON-LD.
 
 ## Workflow
-1. Scope klaeren
-- Identifiziere betroffene Dateien und erwarte Resultate.
-- Begrenze Aenderungen auf das kleinste notwendige Delta.
+1. Clarify scope
+- Identify the affected files and expected results.
+- Limit changes to the smallest necessary delta.
 
-2. Aenderung umsetzen
-- Content/Layout in [index.html](index.html) anpassen.
-- Styles in [src/input.css](src/input.css) anpassen.
-- Falls neue Markup-Dateien dazukommen: content in [tailwind.config.js](tailwind.config.js) erweitern.
+2. Implement the change
+- Update content/layout in [index.html](index.html).
+- Update styles in [src/input.css](src/input.css).
+- If new markup files are added, extend the `content` list in [tailwind.config.js](tailwind.config.js).
 
-3. Build und Schnellvalidierung
-- npm run build ausfuehren.
-- Optional lokal pruefen: npx http-server ./
+3. Build and quick validation
+- Run `npm run build`.
+- Optionally check locally with `npx http-server ./`.
 
-4. Integritaetschecks
-- Meta description, OG image und JSON-LD in [index.html](index.html) vorhanden.
-- Alt-Texte und aria-labels weiterhin vorhanden.
-- Bild- und Font-Referenzen weiterhin gueltig.
+4. Integrity checks
+- Confirm that meta description, OG image, and JSON-LD are still present in [index.html](index.html).
+- Confirm that alt text and `aria-label` attributes are still present.
+- Confirm that image and font references are still valid.
 
-5. Ergebnisbericht
-- Kurz zusammenfassen: geaenderte Dateien, Build-Status, offene Risiken.
-- Falls etwas nicht pruefbar war: explizit als NICHT GEPRUEFT markieren.
+5. Result report
+- Briefly summarize changed files, build status, and open risks.
+- If anything could not be verified, mark it explicitly as NOT VERIFIED.
 
 ## Output Format
-Nutze dieses kompakte Format im Ergebnis:
+Use this compact format in the result:
 
-Maintenance Ergebnis
+Maintenance Result
 - Scope: ...
-- Build: PASS oder FAIL
-- Integritaetschecks: PASS oder FAIL
-- Risiken: keine oder kurze Liste
-- Naechste Schritte: 1-2 konkrete Aktionen
+- Build: PASS or FAIL
+- Integrity checks: PASS or FAIL
+- Risks: none or a short list
+- Next steps: 1-2 concrete actions

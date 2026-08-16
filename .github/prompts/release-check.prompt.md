@@ -5,47 +5,47 @@ description: "Use when preparing a release or publish for this static site. Runs
 
 # Release Check Prompt
 
-Fuehre einen kompakten Pre-Release-Check fuer dieses Repository aus und liefere am Ende nur einen klaren Ergebnisbericht.
+Run a compact pre-release check for this repository and return only a clear result report at the end.
 
-## Ziel
-- Sicherstellen, dass die Seite buildbar ist.
-- Sicherstellen, dass kritische Meta-, Asset- und Deploy-Dateien konsistent sind.
-- Risiken vor dem Publish frueh sichtbar machen.
+## Goal
+- Ensure that the site can be built.
+- Ensure that critical metadata, asset, and deployment files are consistent.
+- Surface risks early before publishing.
 
-## Pruefschritte
-1. Fuehre npm run build aus.
-2. Pruefe, ob index.css als Build-Output vorhanden ist und nicht manuell editiert werden musste.
-3. Pruefe in index.html:
-   - meta description vorhanden
-   - Open-Graph-Bild vorhanden
-   - JSON-LD Person-Block vorhanden
-4. Pruefe Referenzen auf zentrale Assets:
-   - /fonts/*.woff2
-   - /img/* fuer src, srcset und og:image
-5. Pruefe Deploy-kritische Dateien auf Existenz:
-   - CNAME
-   - site.webmanifest
-   - favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png
-6. Wenn moeglich, nenne auffaellige uncommitted Aenderungen, die fuer den Release relevant sind.
+## Check Steps
+1. Run `npm run build`.
+2. Check whether [index.css](index.css) exists as build output and did not require manual editing.
+3. Check in [index.html](index.html):
+   - meta description is present
+   - Open Graph image is present
+   - JSON-LD Person block is present
+4. Check references to key assets:
+   - `/fonts/*.woff2`
+   - `/img/*` for `src`, `srcset`, and `og:image`
+5. Check that deployment-critical files exist:
+   - `CNAME`
+   - `site.webmanifest`
+   - `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`
+6. If possible, mention notable uncommitted changes that are relevant to the release.
 
-## Ergebnisformat
-Liefere das Ergebnis in diesem Format:
+## Result Format
+Return the result in this format:
 
-Release Check Ergebnis
-- Build: PASS oder FAIL
-- Metadaten: PASS oder FAIL
-- Assets und Referenzen: PASS oder FAIL
-- Deploy-Dateien: PASS oder FAIL
-- Arbeitsbaum fuer Release geeignet: PASS oder FAIL
+Release Check Result
+- Build: PASS or FAIL
+- Metadata: PASS or FAIL
+- Assets and references: PASS or FAIL
+- Deployment files: PASS or FAIL
+- Working tree suitable for release: PASS or FAIL
 
-Gefundene Probleme
-- Kurze, priorisierte Liste mit konkreten Dateiangaben.
+Findings
+- Short, prioritized list with specific file references.
 
-Empfohlene naechste Schritte
+Recommended Next Steps
 1. ...
 2. ...
 
-## Regeln
-- Keine inhaltlichen Textaenderungen an deutschsprachigem Content ohne expliziten Auftrag.
-- Keine direkten Edits an index.css.
-- Falls etwas nicht pruefbar ist, klar als NICHT GEPRUEFT markieren und begruenden.
+## Rules
+- Do not make content changes to German copy without an explicit request.
+- Do not edit [index.css](index.css) directly.
+- If something cannot be verified, mark it clearly as NOT VERIFIED and explain why.
