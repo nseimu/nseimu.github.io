@@ -68,6 +68,11 @@ svg {
   @apply inline-flex items-center gap-2 text-xs tracking-widest uppercase border border-offwhite text-offwhite px-6 py-3 hover:bg-offwhite hover:text-ink transition-colors duration-200;
 }
 
+/* Shared page shell for consistent section width */
+.section-shell {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
 /* Warm accent line */
 .accent-line {
   @apply block w-8 h-px bg-warmgrey;

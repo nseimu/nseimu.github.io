@@ -46,7 +46,7 @@
 
     <!-- NAVIGATION -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-offwhite/90 backdrop-blur-sm border-b border-ink/10">
-      <nav class="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between" aria-label="Hauptnavigation">
+      <nav class="section-shell h-16 flex items-center justify-between" aria-label="Hauptnavigation">
         <a href="#" class="font-display text-sm tracking-widest uppercase text-ink hover:text-warmgrey transition-colors duration-200">Nadine Seidu</a>
         <ul class="hidden md:flex items-center gap-8">
           <li><a class="nav-link" href="#position">Position</a></li>
@@ -60,9 +60,10 @@
     <main>
 
       <!-- 01 HERO -->
-      <section id="hero" class="relative min-h-screen pt-16 bg-offwhite flex flex-col md:flex-row overflow-hidden">
+      <section id="hero" class="relative min-h-screen pt-16 bg-offwhite overflow-hidden">
+        <div class="section-shell flex flex-col md:flex-row">
        <!-- Text column -->
-        <div class="flex-1 flex flex-col justify-end md:justify-center px-6 md:px-16 lg:px-24 py-16 md:py-24">
+        <div class="flex-1 flex flex-col justify-end md:justify-center py-16 md:py-24">
           <p class="label mb-6 flex items-center gap-3">
             <span class="accent-line"></span>
             Gesellschaft · Strategie · Zusammenarbeit
@@ -86,31 +87,34 @@
             <img srcset="/img/1724333521397-500w.jpg 500w, /img/1724333521397-900w.jpg 900w" sizes="(max-width: 767px) 100vw, 50vw" src="/img/1724333521397-1300w.jpg" width="1300" height="1950" alt="Nadine Seidu" class="relative w-full md:max-w-xl object-cover object-top shadow-[0_30px_60px_rgba(17,17,17,0.08)]" />
           </picture>
         </div>
+        </div>
       </section>
 
       <!-- 02 POSITION -->
-      <section id="position" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
-        <p class="label mb-10 flex items-center gap-3">
-          <span class="accent-line"></span>
-          01 / Position
-        </p>
-        <div class="md:grid md:grid-cols-3 gap-16">
-          <div class="md:col-span-2">
-            <h2 class="headline-section mb-10">
-              Gute Arbeit entsteht<br>dort, wo Menschen<br>ehrlich sprechen.
-            </h2>
-            <div class="space-y-5 text-base leading-relaxed text-ink/80 max-w-reading">
-              <p>Organisationen brauchen nicht nur gute Ideen, sondern auch einen Raum, in dem man Dinge wirklich sagen, prüfen und neu denken kann.</p>
-              <p>Ich arbeite an den Schnittstellen von Kultur, Wissenschaft, Verwaltung und Zivilgesellschaft. Ich höre zu, stelle Fragen, entwickle Strategien und gestalte Projekte mit Wirkung — mit einem starken Blick auf die Menschen, die sie tragen.</p>
-              <p>Mich interessiert vor allem eines: Wie entsteht aus einer guten Idee etwas, das nicht nur klingt, sondern wirklich trägt? Dabei ist mir bewusst, dass einzelne Projekte oft nur erste Schritte zu nachhaltiger Veränderung sein können und in tragfähige Strategien münden müssen. Wie können wir etwas bauen, das gesellschaftlich wirksam ist und zugleich in längere Räume, Zusammenhänge und Wege überführt, die Wirkung nachhaltig machen?</p>
+      <section id="position" class="py-24 md:py-36">
+        <div class="section-shell">
+          <p class="label mb-10 flex items-center gap-3">
+            <span class="accent-line"></span>
+            01 / Position
+          </p>
+          <div class="md:grid md:grid-cols-3 gap-16">
+            <div class="md:col-span-2">
+              <h2 class="headline-section mb-10">
+                Gute Arbeit entsteht<br>dort, wo Menschen<br>ehrlich sprechen.
+              </h2>
+              <div class="space-y-5 text-base leading-relaxed text-ink/80 max-w-reading">
+                <p>Organisationen brauchen nicht nur gute Ideen, sondern auch einen Raum, in dem man Dinge wirklich sagen, prüfen und neu denken kann.</p>
+                <p>Ich arbeite an den Schnittstellen von Kultur, Wissenschaft, Verwaltung und Zivilgesellschaft. Ich höre zu, stelle Fragen, entwickle Strategien und gestalte Projekte mit Wirkung — mit einem starken Blick auf die Menschen, die sie tragen.</p>
+                <p>Mich interessiert vor allem eines: Wie entsteht aus einer guten Idee etwas, das nicht nur klingt, sondern wirklich trägt? Dabei ist mir bewusst, dass einzelne Projekte oft nur erste Schritte zu nachhaltiger Veränderung sein können und in tragfähige Strategien münden müssen. Wie können wir etwas bauen, das gesellschaftlich wirksam ist und zugleich in längere Räume, Zusammenhänge und Wege überführt, die Wirkung nachhaltig machen?</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- 03 KOMPETENZEN -->
-      <section id="kompetenzen" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
-        <div class="max-w-7xl mx-auto">
+      <section id="kompetenzen" class="py-24 md:py-36 bg-ink/5">
+        <div class="section-shell">
           <p class="label mb-10 flex items-center gap-3">
             <span class="accent-line"></span>
             02 / Meine Leidenschaft
@@ -140,8 +144,8 @@
       </section>
 
       <!-- 04 HALTUNG / PERSPEKTIVE (dark section) -->
-      <section id="perspektive" class="py-36 md:py-48 px-6 md:px-16 lg:px-24 bg-ink text-offwhite">
-        <div class="max-w-7xl mx-auto">
+      <section id="perspektive" class="py-36 md:py-48 bg-ink text-offwhite">
+        <div class="section-shell">
           <p class="label mb-10 flex items-center gap-3 text-warmgrey">
             <span class="block w-8 h-px bg-warmgrey"></span>
             03 / Mein Denken
@@ -159,8 +163,8 @@
       </section>
 
       <!-- 05 FELDER -->
-      <section id="felder" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-offwhite">
-        <div class="max-w-7xl mx-auto">
+      <section id="felder" class="py-24 md:py-36 bg-offwhite">
+        <div class="section-shell">
           <p class="label mb-10 flex items-center gap-3">
             <span class="accent-line"></span>
             04 / Wo ich mitdenke
@@ -191,8 +195,8 @@
       </section>
 
       <!-- 06 GEMEINSAM -->
-      <section id="gemeinsam" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
-        <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 gap-24 items-start">
+      <section id="gemeinsam" class="py-24 md:py-36 bg-ink/5">
+        <div class="section-shell md:grid md:grid-cols-2 gap-24 items-start">
           <div>
             <p class="label mb-10 flex items-center gap-3">
               <span class="accent-line"></span>
@@ -230,8 +234,8 @@
       </section>
 
       <!-- 07 ERFAHRUNG -->
-      <section id="erfahrung" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-offwhite">
-        <div class="max-w-7xl mx-auto">
+      <section id="erfahrung" class="py-24 md:py-36 bg-offwhite">
+        <div class="section-shell">
           <p class="label mb-10 flex items-center gap-3">
             <span class="accent-line"></span>
             05 / Erfahrung
@@ -261,8 +265,8 @@
       </section>
 
       <!-- 08 ÜBER MICH -->
-      <section id="ueber" class="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-ink/5">
-        <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 gap-16 items-start">
+      <section id="ueber" class="py-24 md:py-36 bg-ink/5">
+        <div class="section-shell md:grid md:grid-cols-2 gap-16 items-start">
           <!-- Out of the box thinking visualization -->
           <div class="w-full aspect-[3/4] mb-12 md:mb-0 bg-offwhite flex items-center justify-center" aria-hidden="true">
             <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" role="img" aria-label="Out of the box: Denken jenseits von Grenzen">
@@ -324,13 +328,13 @@
       </section>
 
       <!-- 10 KONTAKT -->
-      <section id="kontakt" class="relative min-h-screen bg-ink text-offwhite flex flex-col justify-between px-6 md:px-16 lg:px-24 py-24 md:py-36 overflow-hidden">
+      <section id="kontakt" class="relative min-h-screen bg-ink text-offwhite flex flex-col justify-between py-24 md:py-36 overflow-hidden">
         <div class="pointer-events-none absolute inset-0" aria-hidden="true">
           <div class="absolute left-0 top-0 h-52 w-52 border border-offwhite/10 -rotate-12"></div>
           <div class="absolute right-12 top-20 h-40 w-40 bg-offwhite/5 rotate-12"></div>
           <div class="absolute right-1/4 bottom-16 h-28 w-28 border border-warmgrey/30 rotate-45"></div>
         </div>
-        <div class="max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center relative z-10">
+        <div class="section-shell w-full flex-1 flex flex-col justify-center relative z-10">
           <h2 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-12">
             Lass uns<br>
             einfach<br>
@@ -356,7 +360,7 @@
           </ul>
         </div>
         <!-- Footer -->
-        <footer class="max-w-7xl mx-auto w-full mt-16 pt-8 border-t border-offwhite/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <footer class="section-shell w-full mt-16 pt-8 border-t border-offwhite/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <p class="text-xs text-warmgrey tracking-widest uppercase">Nadine Seidu · Stuttgart · Deutschlandweit</p>
           <nav aria-label="Footer Navigation">
             <ul class="flex gap-6">
