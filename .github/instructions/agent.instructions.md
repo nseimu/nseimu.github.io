@@ -2,9 +2,16 @@
 applyTo: "**"
 ---
 
-# Agent-Verhalten
+# Agent Behavior
 
-## Git-Workflow
+## Git Workflow
 
-- Keine Pull Requests erstellen. Änderungen werden direkt auf dem aktuellen Branch committet und gepusht.
-- Nach abgeschlossenen Änderungen: `git push` auf den aktuellen Branch ausführen.
+## Language Policy
+
+- All instruction files in `.github/instructions/` must be written in English.
+- Keep wording clear, concise, and technically precise.
+
+## Git Workflow
+
+- Do not create pull requests. Commit and push changes directly to the current branch.
+- After completing changes, run `git push` on the current branch.
